@@ -12,11 +12,15 @@ declare namespace Cypress {
 Cypress.Commands.add('create_user', (profile_data, address_data, payment_data) => {
   cy.request('POST', 'http://localhost:80/register', profile_data).then((response) => {
     // Update with address information
-    address_data['userID'] = response.body.id;
-    cy.request('POST', 'http://localhost:80/addresses', address_data);
+    if (address_data !== null) {
+      address_data['userID'] = response.body.id;
+      cy.request('POST', 'http://localhost:80/addresses', address_data);
+    }
     // Update with payment information
-    payment_data['userID'] = response.body.id;
-    cy.request('POST', 'http://localhost:80/cards', payment_data);
+    if (payment_data !== null) {
+      payment_data['userID'] = response.body.id;
+      cy.request('POST', 'http://localhost:80/cards', payment_data);
+    }
   });
 });
 
