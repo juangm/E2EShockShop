@@ -7,14 +7,23 @@
   "author": "juangm <juangarciamarinblog@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "cy": "cypress open",
+    "cy:electron": "cypress run --spec './cypress/integration/checkout_smoke.ts'",
+    "cy:chrome": "cypress run --spec './cypress/integration/checkout_smoke.ts' --browser chrome"
+  },
   "dependencies": {
     "@cypress/webpack-preprocessor": "^5.4.5",
     "cypress": "^5.1.0",
+    "cypress-xpath": "^1.6.0",
     "ts-loader": "^8.0.3",
     "webpack": "^4.44.1"
   },
   "comments": {
-    "cypress": "Fast, easy and reliable testing for anything that runs in a browser."
+    "cypress": "Fast, easy and reliable testing for anything that runs in a browser.",
+    "cypress-xpath": "Add xpath selector support to cypress.",
+    "ts-loader": "TypeScript loader for webpack.",
+    "webpack": "Static module bundler for modern JavaScript applications."
   },
   "devDependencies": {
     "@types/node": "^14.10.1",
@@ -23,7 +32,7 @@
   },
   "dev-comments": {
     "@types/node": "TypeScript definitions for Node.js",
-    "prettier": "An opinionated code formatter",
+    "prettier": "An opinionated code formatter.",
     "typescript": "Language for application scale JavaScript development."
   }
 }
