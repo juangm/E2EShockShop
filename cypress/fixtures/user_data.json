@@ -1,0 +1,21 @@
+{
+  "profile_data": {
+    "firstName": "name",
+    "lastName": "surname",
+    "username": "testUser",
+    "password": "testPass",
+    "email": "test@test.com"
+  },
+  "payment_data": {
+    "longNum": "41111111111111",
+    "expires": "10/22",
+    "ccv": "123"
+  },
+  "address_data": {
+    "street": "ulica",
+    "number": "12",
+    "country": "Poland",
+    "city": "Warsaw",
+    "postcode": "02500"
+  }
+}
