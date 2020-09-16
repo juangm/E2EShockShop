@@ -48,3 +48,14 @@ And User adds few products to the cart
 When User does the checkout with invalid address
 Then User's order is NOT processed
 ```
+
+## Cart modification
+
+```Gherkin
+Given User with an account with address and card stored
+And User navigates to shop and login
+And User adds few products to the cart
+When User does the checkout and update the cart
+Then Order is updated with the changes
+And User's order is processed
+```

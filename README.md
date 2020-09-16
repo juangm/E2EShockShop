@@ -13,9 +13,18 @@
 - Follow instructions in the [link](https://microservices-demo.github.io/docs/quickstart.html)
 - Before running the tests make sure the shop is running and it is available in `http://localhost:80`
 
-## Installing and running E2E with Cypress
+## E2E with Cypress
 
-- :construction: WIP...
+### Installation
+
+- NodeJS
+- Run in the working directory `yarn install`
+
+### Running Cypress
+
+- To open cypress console: `yarn cy`
+- Run checkout scenarios with electron in headless mode: `yarn cy:electron`
+- Run checkout scenarios with latest chrome: `yarn cy:chrome`
 
 ## Test Scenarios for Checkout Process
 
@@ -34,15 +43,15 @@
 
 ## Bugs/Features
 
-- :x: Not possible to update card number or shipping address from the frontend (Using the API as workaround)
-
-- :warning: Button for using coupons is not working - Functionality not implemented
-- :warning: Not possible to create orders bigger than 100\$
-- :warning: Not possible validate payments (invalid cards are accepted)
-- :warning: Not possible validate address (invalid address are accepted)
+- :x: => Not possible to update card number or shipping address from the frontend (Using the API as workaround)
+- :warning: => Button for using coupons is not working - Functionality not implemented
+- :warning: => Not possible to create orders bigger than 100\$
+- :warning: => Not possible validate payments (invalid cards are accepted)
+- :warning: => Not possible validate address (invalid address are accepted)
 
 ## Future Improvements
 
+- [ ] Improve assertions in checkout (check quantity amount of orders, updating orders, etc)
 - [ ] Improve the cleaning of the environment after each test (delete user, order, cart, etc. created during the test scenario)
 - [ ] Relay in API to get all elements of catalogue and select random ones
 - [ ] Implement PageObjects for the pages in application
