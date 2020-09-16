@@ -8,7 +8,10 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "cypress": "^5.1.0"
+    "@cypress/webpack-preprocessor": "^5.4.5",
+    "cypress": "^5.1.0",
+    "ts-loader": "^8.0.3",
+    "webpack": "^4.44.1"
   },
   "comments": {
     "cypress": "Fast, easy and reliable testing for anything that runs in a browser."
@@ -20,6 +23,7 @@
   },
   "dev-comments": {
     "@types/node": "TypeScript definitions for Node.js",
+    "prettier": "An opinionated code formatter",
     "typescript": "Language for application scale JavaScript development."
   }
 }
