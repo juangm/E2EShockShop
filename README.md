@@ -15,7 +15,7 @@
 
 ## Installing and running E2E with Cypress
 
-- WIP...
+- :construction: WIP...
 
 ## Test Scenarios for Checkout Process
 
@@ -36,13 +36,14 @@
 
 - :x: Not possible to update card number or shipping address from the frontend (Using the API as workaround)
 
-- :!: Button for using coupons is not working - Functionality not implemented
-- :!: Not possible to create orders bigger than 100\$
-- :!: Not possible validate payments (invalid cards are accepted)
-- :!: Not possible validate address (invalid address are accepted)
+- :warning: Button for using coupons is not working - Functionality not implemented
+- :warning: Not possible to create orders bigger than 100\$
+- :warning: Not possible validate payments (invalid cards are accepted)
+- :warning: Not possible validate address (invalid address are accepted)
 
 ## Future Improvements
 
 - [ ] Improve the cleaning of the environment after each test (delete user, order, cart, etc. created during the test scenario)
 - [ ] Relay in API to get all elements of catalogue and select random ones
-- [ ]
+- [ ] Implement PageObjects for the pages in application
+- [ ] Implement functional tests for the API endpoints [documentation](https://microservices-demo.github.io/api/index.html)
